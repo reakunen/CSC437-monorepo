@@ -3,88 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Playlists</title>
-    <link rel="stylesheet" href="/styles/page.css" />
+    <title>Music Playlist</title>
+    <link rel="stylesheet" href="styles/page.css">
 </head>
 <body>
     <div class="container">
-        <nav>
-            <a href="index.html">Home</a> &gt;
-            <a href="sheet-music.html">Sheet Music</a>
-        </nav>
-
         <header>
-            <h1>Music Playlists</h1>
-            <p>Discover and enjoy curated music playlists for different moods and activities.</p>
+            <nav class="breadcrumb">
+                <a href="/">Home</a> / <a href="/music">Music</a> / <span>Playlist</span>
+            </nav>
+            <h1>
+                <svg class="icon">
+                    <use href="/icons/music.svg#icon-playlist" />
+                </svg>
+                Summer Vibes 2024
+            </h1>
+            <p class="subtitle">The perfect soundtrack for your summer adventures</p>
         </header>
 
-        <article id="workout" class="card">
-            <h2>Workout Energy</h2>
-            <dl>
-                <dt>Genre</dt>
-                <dd>Electronic, Hip Hop</dd>
-                
-                <dt>Duration</dt>
-                <dd>60 minutes</dd>
-                
-                <dt>BPM Range</dt>
-                <dd>120-140</dd>
-                
-                <dt>Rating</dt>
-                <dd class="success">4.8/5</dd>
-            </dl>
-
-            <section class="track-list">
-                <h3>Featured Tracks</h3>
-                <ul>
-                    <li>Power Up - Electro Beats</li>
-                    <li>Stronger - Hip Hop Mix</li>
-                    <li>Energy Boost - Dance Remix</li>
-                </ul>
+        <article class="card">
+            <section class="stats">
+                <div class="stat-item">
+                    <svg class="icon">
+                        <use href="/icons/music.svg#icon-music" />
+                    </svg>
+                    <span>24 tracks</span>
+                </div>
+                <div class="stat-item">
+                    <svg class="icon">
+                        <use href="/icons/music.svg#icon-clock" />
+                    </svg>
+                    <span>2h 15m</span>
+                </div>
+                <div class="stat-item">
+                    <svg class="icon">
+                        <use href="/icons/music.svg#icon-heart" />
+                    </svg>
+                    <span>1.2M likes</span>
+                </div>
             </section>
 
-            <section class="related-content">
-                <h3>Related Playlists</h3>
+            <section class="playlist-info">
+                <h2>About this playlist</h2>
+                <p>Curated by DJ Summer, this playlist features the hottest tracks of the season. Perfect for beach parties, road trips, and lazy afternoons.</p>
+                
+                <div class="actions">
+                    <button class="icon-button">
+                        <svg class="icon">
+                            <use href="/icons/music.svg#icon-heart" />
+                        </svg>
+                        Like
+                    </button>
+                    <button class="icon-button">
+                        <svg class="icon">
+                            <use href="/icons/music.svg#icon-share" />
+                        </svg>
+                        Share
+                    </button>
+                </div>
+            </section>
+
+            <section class="track-list">
+                <h2>Featured Tracks</h2>
                 <ul>
-                    <li><a href="#focus">Focus & Concentration</a></li>
-                    <li><a href="#relaxation">Post-Workout Relaxation</a></li>
+                    <li>
+                        <svg class="icon">
+                            <use href="/icons/music.svg#icon-music" />
+                        </svg>
+                        "Summer Nights" - DJ Summer
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use href="/icons/music.svg#icon-music" />
+                        </svg>
+                        "Beach Party" - The Waves
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use href="/icons/music.svg#icon-music" />
+                        </svg>
+                        "Sunset Drive" - Road Trippers
+                    </li>
                 </ul>
             </section>
         </article>
 
-        <article id="focus" class="card">
-            <h2>Focus & Concentration</h2>
-            <dl>
-                <dt>Genre</dt>
-                <dd>Classical, Ambient</dd>
-                
-                <dt>Duration</dt>
-                <dd>90 minutes</dd>
-                
-                <dt>BPM Range</dt>
-                <dd>60-80</dd>
-                
-                <dt>Rating</dt>
-                <dd class="success">4.9/5</dd>
-            </dl>
-
-            <section class="track-list">
-                <h3>Featured Tracks</h3>
-                <ul>
-                    <li>Mozart - Piano Sonata No. 16</li>
-                    <li>Ambient Study - Focus Mix</li>
-                    <li>Concentration Flow - Classical</li>
-                </ul>
-            </section>
-
-            <section class="related-content">
-                <h3>Related Playlists</h3>
-                <ul>
-                    <li><a href="#workout">Workout Energy</a></li>
-                    <li><a href="#relaxation">Relaxation & Meditation</a></li>
-                </ul>
-            </section>
-        </article>
+        <section class="related-content">
+            <h2>Related Playlists</h2>
+            <div class="related-links">
+                <a href="/playlist/tropical">
+                    <svg class="icon">
+                        <use href="/icons/music.svg#icon-playlist" />
+                    </svg>
+                    Tropical Beats
+                </a>
+                <a href="/playlist/roadtrip">
+                    <svg class="icon">
+                        <use href="/icons/music.svg#icon-playlist" />
+                    </svg>
+                    Road Trip Anthems
+                </a>
+                <a href="/playlist/beach">
+                    <svg class="icon">
+                        <use href="/icons/music.svg#icon-playlist" />
+                    </svg>
+                    Beach Party Mix
+                </a>
+            </div>
+        </section>
     </div>
 </body>
 </html> 
