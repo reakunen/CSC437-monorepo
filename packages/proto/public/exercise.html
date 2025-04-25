@@ -4,83 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise Library</title>
+    <link rel="stylesheet" href="/styles/page.css" />
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a> &gt;
-        <a href="gym.html">Gym Profile</a>
-    </nav>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a> &gt;
+            <a href="workout.html">Workout Groups</a>
+        </nav>
 
-    <h1>Exercise Library</h1>
+        <header>
+            <h1>Exercise Library</h1>
+            <p>Browse our comprehensive collection of exercises with detailed instructions.</p>
+        </header>
 
-    <section class="exercise-categories">
-        <h2>Categories</h2>
-        <ul>
-            <li>Strength Training</li>
-            <li>Cardio</li>
-            <li>Flexibility</li>
-            <li>Core</li>
-        </ul>
-    </section>
-
-    <section class="exercises">
-        <article id="bench-press" class="exercise">
+        <article id="bench-press" class="card">
             <h2>Bench Press</h2>
             <dl>
-                <dt>Category</dt>
-                <dd>Strength Training</dd>
+                <dt>Type</dt>
+                <dd>Compound</dd>
                 
-                <dt>Muscle Groups</dt>
+                <dt>Muscle Group</dt>
                 <dd>Chest, Shoulders, Triceps</dd>
-                
-                <dt>Equipment Needed</dt>
-                <dd>Bench, Barbell, Weight Plates</dd>
                 
                 <dt>Difficulty</dt>
                 <dd>Intermediate</dd>
+                
+                <dt>Equipment</dt>
+                <dd>Barbell, Bench</dd>
             </dl>
 
-            <section class="form-guide">
-                <h3>Proper Form</h3>
+            <section class="instructions">
+                <h3>Instructions</h3>
                 <ol>
-                    <li>Lie flat on bench, feet flat on ground</li>
-                    <li>Grip barbell slightly wider than shoulder width</li>
-                    <li>Lower bar to chest with controlled movement</li>
-                    <li>Press bar up to starting position</li>
+                    <li>Lie flat on the bench with feet firmly planted on the ground</li>
+                    <li>Grip the barbell slightly wider than shoulder width</li>
+                    <li>Lower the bar to your chest with control</li>
+                    <li>Press the bar back up to the starting position</li>
                 </ol>
-                <a href="video.html#bench-press-form">Watch Form Video</a>
+            </section>
+
+            <section class="tips">
+                <h3>Tips</h3>
+                <ul>
+                    <li>Keep your back flat against the bench</li>
+                    <li>Maintain a slight arch in your lower back</li>
+                    <li>Keep your wrists straight throughout the movement</li>
+                </ul>
             </section>
         </article>
 
-        <article id="plank" class="exercise">
+        <article id="plank" class="card">
             <h2>Plank</h2>
             <dl>
-                <dt>Category</dt>
-                <dd>Core</dd>
+                <dt>Type</dt>
+                <dd>Isometric</dd>
                 
-                <dt>Muscle Groups</dt>
-                <dd>Core, Shoulders, Back</dd>
-                
-                <dt>Equipment Needed</dt>
-                <dd>Mat (optional)</dd>
+                <dt>Muscle Group</dt>
+                <dd>Core, Shoulders</dd>
                 
                 <dt>Difficulty</dt>
                 <dd>Beginner</dd>
+                
+                <dt>Equipment</dt>
+                <dd>Mat (optional)</dd>
             </dl>
 
-            <section class="form-guide">
-                <h3>Proper Form</h3>
+            <section class="instructions">
+                <h3>Instructions</h3>
                 <ol>
-                    <li>Start in push-up position on forearms</li>
-                    <li>Keep body in straight line from head to heels</li>
-                    <li>Engage core and hold position</li>
-                    <li>Maintain normal breathing</li>
+                    <li>Start in a push-up position with forearms on the ground</li>
+                    <li>Keep your body in a straight line from head to heels</li>
+                    <li>Engage your core and hold the position</li>
+                    <li>Maintain proper breathing throughout</li>
                 </ol>
-                <a href="video.html#plank-form">Watch Form Video</a>
+            </section>
+
+            <section class="tips">
+                <h3>Tips</h3>
+                <ul>
+                    <li>Don't let your hips sag or rise too high</li>
+                    <li>Keep your neck in line with your spine</li>
+                    <li>Start with shorter holds and gradually increase duration</li>
+                </ul>
             </section>
         </article>
 
-        <article id="russian-twist" class="exercise">
+        <article id="russian-twist" class="card">
             <h2>Russian Twist</h2>
             <dl>
                 <dt>Category</dt>
@@ -96,18 +106,26 @@
                 <dd>Intermediate</dd>
             </dl>
 
-            <section class="form-guide">
-                <h3>Proper Form</h3>
+            <section class="instructions">
+                <h3>Instructions</h3>
                 <ol>
                     <li>Sit with knees bent, feet off ground</li>
                     <li>Lean back slightly, maintaining straight back</li>
                     <li>Hold weight or clasp hands at chest</li>
                     <li>Rotate torso side to side</li>
                 </ol>
-                <a href="video.html#russian-twist-form">Watch Form Video</a>
+            </section>
+
+            <section class="tips">
+                <h3>Tips</h3>
+                <ul>
+                    <li>Keep your back straight</li>
+                    <li>Engage your core</li>
+                    <li>Rotate slowly and control the movement</li>
+                </ul>
             </section>
         </article>
-    </section>
+    </div>
 
     <section class="related">
         <h2>Related Resources</h2>

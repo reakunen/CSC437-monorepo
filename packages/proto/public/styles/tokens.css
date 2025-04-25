@@ -1,0 +1,83 @@
+:root {
+  /* Color Palette */
+  --color-primary: #2c3e50;
+  --color-secondary: #3498db;
+  --color-accent: #e74c3c;
+  --color-success: #2ecc71;
+  --color-warning: #f1c40f;
+  --color-danger: #e74c3c;
+  
+  /* Text Colors */
+  --color-text: #2c3e50;
+  --color-text-inverted: #ffffff;
+  --color-text-muted: #7f8c8d;
+  --color-text-success: #27ae60;
+  --color-text-warning: #f39c12;
+  --color-text-danger: #c0392b;
+  
+  /* Background Colors */
+  --color-background-page: #f9f9f9;
+  --color-background-header: var(--color-primary);
+  --color-background-nav: #ffffff;
+  --color-background-card: #ffffff;
+  --color-background-hover: #f5f5f5;
+  
+  /* Link Colors */
+  --color-link: var(--color-secondary);
+  --color-link-hover: #2980b9;
+  --color-link-visited: #8e44ad;
+  
+  /* Border Colors */
+  --color-border: #ecf0f1;
+  --color-border-dark: #bdc3c7;
+  --color-border-focus: var(--color-secondary);
+  
+  /* Typography */
+  --font-family-base: system-ui, -apple-system, sans-serif;
+  --font-family-headings: var(--font-family-base);
+  
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.8;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  
+  /* Border Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  /* Layout */
+  --container-max-width: 1200px;
+  --container-padding: var(--spacing-md);
+  
+  --grid-gap: var(--spacing-md);
+  --flex-gap: var(--spacing-sm);
+  
+  --header-height: 4rem;
+  --footer-height: 3rem;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+} 

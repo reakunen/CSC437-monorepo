@@ -4,83 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Recommendations</title>
+    <link rel="stylesheet" href="/styles/page.css" />
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-    </nav>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> &gt;
+            <a href="budget.html">Budget Overview</a>
+        </nav>
 
-    <h1>Financial Recommendations</h1>
+        <header class="page-header">
+            <h1>Financial Recommendations</h1>
+            <p class="subtitle">Personalized financial advice based on your current financial situation.</p>
+        </header>
 
-    <section class="personalized-advice">
-        <h2>Personalized Financial Advice</h2>
-        <article class="recommendation">
-            <h3>Increase Emergency Fund</h3>
-            <p>Based on your monthly expenses of $3,750, we recommend increasing your emergency fund to $11,250 (3 months of expenses).</p>
-            <ul class="action-items">
-                <li>Current emergency fund: $5,000</li>
-                <li>Target amount: $11,250</li>
-                <li>Suggested monthly contribution: $500</li>
+        <main>
+            <article id="emergency-fund" class="card">
+                <h2>Increase Emergency Fund</h2>
+                <div class="card-content">
+                    <dl class="stats">
+                        <div class="stat-item">
+                            <dt>Current Status</dt>
+                            <dd class="warning">$5,000</dd>
+                        </div>
+                        <div class="stat-item">
+                            <dt>Target Amount</dt>
+                            <dd class="success">$11,250</dd>
+                        </div>
+                        <div class="stat-item">
+                            <dt>Monthly Contribution</dt>
+                            <dd>$500</dd>
+                        </div>
+                        <div class="stat-item">
+                            <dt>Time to Goal</dt>
+                            <dd>13 months</dd>
+                        </div>
+                    </dl>
+
+                    <section class="recommendation-details">
+                        <h3>Recommendation Details</h3>
+                        <p>Based on your monthly expenses of $3,750, we recommend increasing your emergency fund to $11,250 (3 months of expenses).</p>
+                    </section>
+
+                    <section class="action-items">
+                        <h3>Action Items</h3>
+                        <ul class="action-list">
+                            <li>Review current budget allocation</li>
+                            <li>Set up automatic monthly transfers</li>
+                            <li>Consider high-yield savings account</li>
+                        </ul>
+                    </section>
+                </div>
+            </article>
+
+            <article id="portfolio-diversification" class="card">
+                <h2>Portfolio Diversification</h2>
+                <div class="card-content">
+                    <dl class="stats">
+                        <div class="stat-item">
+                            <dt>Current Allocation</dt>
+                            <dd class="warning">70% Technology</dd>
+                        </div>
+                        <div class="stat-item">
+                            <dt>Recommended Allocation</dt>
+                            <dd class="success">30% Technology</dd>
+                        </div>
+                        <div class="stat-item">
+                            <dt>Rebalancing Needed</dt>
+                            <dd>$5,000</dd>
+                        </div>
+                    </dl>
+
+                    <section class="recommendation-details">
+                        <h3>ETF Recommendations</h3>
+                        <ul class="etf-list">
+                            <li>VTI - Vanguard Total Stock Market ETF</li>
+                            <li>VXUS - Vanguard Total International Stock ETF</li>
+                            <li>VNQ - Vanguard Real Estate ETF</li>
+                        </ul>
+                    </section>
+
+                    <section class="action-items">
+                        <h3>Action Items</h3>
+                        <ul class="action-list">
+                            <li>Review current portfolio holdings</li>
+                            <li>Plan gradual rebalancing strategy</li>
+                            <li>Set up automatic investments</li>
+                        </ul>
+                    </section>
+                </div>
+            </article>
+        </main>
+
+        <aside class="related-content">
+            <h2>Related Tools</h2>
+            <ul class="related-links">
+                <li><a href="budget.html">Budget Overview</a></li>
+                <li><a href="stocks.html">Investment Portfolio</a></li>
+                <li><a href="analytics.html">Financial Analytics</a></li>
             </ul>
-            <a href="budget.html">Adjust Budget Allocation</a>
-        </article>
-
-        <article class="recommendation">
-            <h3>Portfolio Diversification</h3>
-            <p>Your portfolio is heavily weighted in technology stocks. Consider these diversification options:</p>
-            <ul>
-                <li>
-                    <h4>ETF Recommendations</h4>
-                    <ul>
-                        <li>VTI - Vanguard Total Stock Market ETF</li>
-                        <li>VXUS - Vanguard Total International Stock ETF</li>
-                        <li>VNQ - Vanguard Real Estate ETF</li>
-                    </ul>
-                </li>
-            </ul>
-            <a href="stocks.html">View Current Portfolio</a>
-        </article>
-    </section>
-
-    <section class="savings-goals">
-        <h2>Savings Goals</h2>
-        <ul>
-            <li>
-                <h3>Home Down Payment</h3>
-                <dl>
-                    <dt>Target Amount</dt>
-                    <dd>$60,000</dd>
-                    <dt>Current Progress</dt>
-                    <dd>$15,000 (25%)</dd>
-                    <dt>Monthly Contribution</dt>
-                    <dd>$1,000</dd>
-                    <dt>Estimated Completion</dt>
-                    <dd>45 months</dd>
-                </dl>
-            </li>
-            <li>
-                <h3>Retirement</h3>
-                <dl>
-                    <dt>Target Amount</dt>
-                    <dd>$1,000,000</dd>
-                    <dt>Current Progress</dt>
-                    <dd>$50,000 (5%)</dd>
-                    <dt>Monthly Contribution</dt>
-                    <dd>$1,500</dd>
-                    <dt>Estimated Completion</dt>
-                    <dd>25 years</dd>
-                </dl>
-            </li>
-        </ul>
-    </section>
-
-    <section class="related">
-        <h2>Related Tools</h2>
-        <ul>
-            <li><a href="budget.html">Budget Overview</a></li>
-            <li><a href="stocks.html">Investment Portfolio</a></li>
-            <li><a href="analytics.html">Financial Analytics</a></li>
-        </ul>
-    </section>
+        </aside>
+    </div>
 </body>
 </html> 

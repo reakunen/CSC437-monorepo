@@ -4,117 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout Groups</title>
+    <link rel="stylesheet" href="/styles/page.css" />
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a> &gt;
-        <a href="gym.html">Gym</a>
-    </nav>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a> &gt;
+            <a href="gym.html">Gym Profile</a>
+        </nav>
 
-    <h1>Workout Groups</h1>
+        <header>
+            <h1>Workout Groups</h1>
+            <p>Join and participate in specialized workout programs.</p>
+        </header>
 
-    <article class="workout-group">
-        <h2>Upper Body Power</h2>
-        <dl>
-            <dt>Type</dt>
-            <dd>Strength Training</dd>
-            
-            <dt>Difficulty</dt>
-            <dd>Intermediate</dd>
-            
-            <dt>Duration</dt>
-            <dd>60 minutes</dd>
-            
-            <dt>Equipment Required</dt>
-            <dd>
+        <article id="upper-body" class="card">
+            <h2>Upper Body Power</h2>
+            <dl>
+                <dt>Duration</dt>
+                <dd>12 weeks</dd>
+                
+                <dt>Difficulty</dt>
+                <dd>Intermediate</dd>
+                
+                <dt>Schedule</dt>
+                <dd>Monday, Wednesday, Friday</dd>
+                
+                <dt>Progress</dt>
+                <dd class="success">Week 6/12</dd>
+            </dl>
+
+            <section class="workout-description">
+                <h3>Description</h3>
+                <p>A comprehensive upper body strength program focusing on compound movements and progressive overload.</p>
+            </section>
+
+            <section class="exercises">
+                <h3>Key Exercises</h3>
                 <ul>
-                    <li>Dumbbells</li>
-                    <li>Barbell</li>
-                    <li>Bench</li>
+                    <li><a href="exercise.html#bench-press">Bench Press</a></li>
+                    <li><a href="exercise.html#overhead-press">Overhead Press</a></li>
+                    <li><a href="exercise.html#pull-ups">Pull-ups</a></li>
                 </ul>
-            </dd>
-        </dl>
+            </section>
+        </article>
 
-        <section class="exercises">
-            <h3>Exercises</h3>
-            <ul>
-                <li>
-                    <a href="exercise.html#bench-press">Bench Press</a>
-                    <ul>
-                        <li>Sets: 4</li>
-                        <li>Reps: 8-10</li>
-                        <li>Rest: 90 seconds</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="exercise.html#shoulder-press">Shoulder Press</a>
-                    <ul>
-                        <li>Sets: 3</li>
-                        <li>Reps: 10-12</li>
-                        <li>Rest: 60 seconds</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+        <article id="core-blast" class="card">
+            <h2>Core Blast</h2>
+            <dl>
+                <dt>Duration</dt>
+                <dd>8 weeks</dd>
+                
+                <dt>Difficulty</dt>
+                <dd>Beginner to Intermediate</dd>
+                
+                <dt>Schedule</dt>
+                <dd>Tuesday, Thursday</dd>
+                
+                <dt>Progress</dt>
+                <dd class="success">Week 2/8</dd>
+            </dl>
 
-        <section class="related">
-            <h3>Related Content</h3>
-            <ul>
-                <li><a href="video.html#upper-body">Video Guide</a></li>
-                <li><a href="analytics.html#workout-tracking">Progress Tracking</a></li>
-            </ul>
-        </section>
-    </article>
+            <section class="workout-description">
+                <h3>Description</h3>
+                <p>An intensive core strengthening program that targets all major abdominal muscles and improves stability.</p>
+            </section>
 
-    <article class="workout-group">
-        <h2>Core Blast</h2>
-        <dl>
-            <dt>Type</dt>
-            <dd>Circuit Training</dd>
-            
-            <dt>Difficulty</dt>
-            <dd>Advanced</dd>
-            
-            <dt>Duration</dt>
-            <dd>30 minutes</dd>
-            
-            <dt>Equipment Required</dt>
-            <dd>
+            <section class="exercises">
+                <h3>Key Exercises</h3>
                 <ul>
-                    <li>Mat</li>
-                    <li>Medicine Ball</li>
+                    <li><a href="exercise.html#plank">Plank Variations</a></li>
+                    <li><a href="exercise.html#leg-raises">Hanging Leg Raises</a></li>
+                    <li><a href="exercise.html#russian-twists">Russian Twists</a></li>
                 </ul>
-            </dd>
-        </dl>
-
-        <section class="exercises">
-            <h3>Exercises</h3>
-            <ul>
-                <li>
-                    <a href="exercise.html#plank">Plank Variations</a>
-                    <ul>
-                        <li>Duration: 60 seconds each</li>
-                        <li>Rest: 30 seconds</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="exercise.html#russian-twist">Russian Twists</a>
-                    <ul>
-                        <li>Sets: 3</li>
-                        <li>Reps: 20 each side</li>
-                        <li>Rest: 45 seconds</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <section class="related">
-            <h3>Related Content</h3>
-            <ul>
-                <li><a href="video.html#core-workout">Video Guide</a></li>
-                <li><a href="analytics.html#core-progress">Progress Tracking</a></li>
-            </ul>
-        </section>
-    </article>
+            </section>
+        </article>
+    </div>
 </body>
 </html> 

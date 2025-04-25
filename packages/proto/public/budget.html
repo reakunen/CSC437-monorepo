@@ -4,68 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Tracker</title>
+    <link rel="stylesheet" href="/styles/page.css" />
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-    </nav>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> &gt;
+            <a href="finance-recommendations.html">Financial Recommendations</a>
+        </nav>
 
-    <h1>Monthly Budget</h1>
+        <header class="page-header">
+            <h1>Monthly Budget</h1>
+            <p class="subtitle">Track and manage your monthly income and expenses.</p>
+        </header>
 
-    <section class="budget-summary">
-        <h2>Budget Overview</h2>
-        <dl>
-            <dt>Total Income</dt>
-            <dd>$5,000.00</dd>
-            
-            <dt>Total Expenses</dt>
-            <dd>$3,750.00</dd>
-            
-            <dt>Savings</dt>
-            <dd>$1,250.00</dd>
-        </dl>
-    </section>
+        <main>
+            <article id="budget-summary" class="card">
+                <h2>Budget Overview</h2>
+                <div class="card-content">
+                    <dl class="stats">
+                        <div class="stat-item">
+                            <dt>Total Income</dt>
+                            <dd class="success">$5,000.00</dd>
+                        </div>
+                        <div class="stat-item">
+                            <dt>Total Expenses</dt>
+                            <dd class="warning">$3,750.00</dd>
+                        </div>
+                        <div class="stat-item">
+                            <dt>Savings</dt>
+                            <dd class="success">$1,250.00</dd>
+                        </div>
+                    </dl>
+                </div>
+            </article>
 
-    <section class="expense-categories">
-        <h2>Expense Categories</h2>
-        <ul>
-            <li>
-                <h3>Housing</h3>
-                <dl>
-                    <dt>Rent</dt>
-                    <dd>$1,800.00</dd>
-                    <dt>Utilities</dt>
-                    <dd>$200.00</dd>
-                </dl>
-            </li>
-            <li>
-                <h3>Transportation</h3>
-                <dl>
-                    <dt>Car Payment</dt>
-                    <dd>$300.00</dd>
-                    <dt>Gas</dt>
-                    <dd>$150.00</dd>
-                </dl>
-            </li>
-            <li>
-                <h3>Food</h3>
-                <dl>
-                    <dt>Groceries</dt>
-                    <dd>$400.00</dd>
-                    <dt>Dining Out</dt>
-                    <dd>$200.00</dd>
-                </dl>
-            </li>
-        </ul>
-    </section>
+            <article id="expense-categories" class="card">
+                <h2>Expense Categories</h2>
+                <div class="card-content">
+                    <section class="category">
+                        <h3>Housing</h3>
+                        <dl class="expense-details">
+                            <div class="expense-item">
+                                <dt>Rent</dt>
+                                <dd>$1,800.00</dd>
+                            </div>
+                            <div class="expense-item">
+                                <dt>Utilities</dt>
+                                <dd>$200.00</dd>
+                            </div>
+                        </dl>
+                    </section>
 
-    <section class="related">
-        <h2>Related Financial Tools</h2>
-        <ul>
-            <li><a href="stocks.html">Investment Portfolio</a></li>
-            <li><a href="finance-recommendations.html">Financial Recommendations</a></li>
-            <li><a href="analytics.html">Spending Analytics</a></li>
-        </ul>
-    </section>
+                    <section class="category">
+                        <h3>Transportation</h3>
+                        <dl class="expense-details">
+                            <div class="expense-item">
+                                <dt>Car Payment</dt>
+                                <dd>$300.00</dd>
+                            </div>
+                            <div class="expense-item">
+                                <dt>Gas</dt>
+                                <dd>$150.00</dd>
+                            </div>
+                        </dl>
+                    </section>
+
+                    <section class="category">
+                        <h3>Food</h3>
+                        <dl class="expense-details">
+                            <div class="expense-item">
+                                <dt>Groceries</dt>
+                                <dd>$400.00</dd>
+                            </div>
+                            <div class="expense-item">
+                                <dt>Dining Out</dt>
+                                <dd>$200.00</dd>
+                            </div>
+                        </dl>
+                    </section>
+                </div>
+            </article>
+        </main>
+
+        <aside class="related-content">
+            <h2>Related Financial Tools</h2>
+            <ul class="related-links">
+                <li><a href="stocks.html">Investment Portfolio</a></li>
+                <li><a href="finance-recommendations.html">Financial Recommendations</a></li>
+                <li><a href="analytics.html">Spending Analytics</a></li>
+            </ul>
+        </aside>
+    </div>
 </body>
 </html> 

@@ -4,115 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Founder Profile</title>
+    <link rel="stylesheet" href="/styles/page.css" />
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a> &gt;
-        <a href="startup.html">Startup</a>
-    </nav>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> &gt;
+            <a href="startup.html">Startup</a>
+        </nav>
 
-    <h1>Founder Profile</h1>
+        <header class="page-header">
+            <h1>Founder Profile</h1>
+            <p class="subtitle">Learn about the founder's background, experience, and vision.</p>
+        </header>
 
-    <section class="basic-info">
-        <h2>Basic Information</h2>
-        <dl>
-            <dt>Name</dt>
-            <dd>Sarah Chen</dd>
-            
-            <dt>Role</dt>
-            <dd>CEO & Founder at FitTech Solutions</dd>
-            
-            <dt>Location</dt>
-            <dd>San Francisco, CA</dd>
-            
-            <dt>Education</dt>
-            <dd>MS in Computer Science, Stanford University</dd>
-        </dl>
-    </section>
+        <main>
+            <article id="basic-info" class="card">
+                <h2>Basic Information</h2>
+                <div class="card-content">
+                    <dl class="profile-info">
+                        <div class="info-item">
+                            <dt>Name</dt>
+                            <dd>Sarah Chen</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>Role</dt>
+                            <dd>CEO & Founder at FitTech Solutions</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>Location</dt>
+                            <dd>San Francisco, CA</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>Education</dt>
+                            <dd>MS in Computer Science, Stanford University</dd>
+                        </div>
+                    </dl>
+                </div>
+            </article>
 
-    <section class="experience">
-        <h2>Professional Experience</h2>
-        <article class="job">
-            <h3>Product Lead</h3>
-            <dl>
-                <dt>Company</dt>
-                <dd>Peloton</dd>
-                <dt>Duration</dt>
-                <dd>2020-2023</dd>
-                <dt>Achievements</dt>
-                <dd>
-                    <ul>
-                        <li>Led development of AI-powered workout recommendation system</li>
-                        <li>Grew active users by 150% in 18 months</li>
-                        <li>Launched mobile app redesign with 95% user satisfaction</li>
-                    </ul>
-                </dd>
-            </dl>
-        </article>
+            <article id="experience" class="card">
+                <h2>Professional Experience</h2>
+                <div class="card-content">
+                    <section class="job">
+                        <h3>Product Lead</h3>
+                        <dl class="job-details">
+                            <div class="detail-item">
+                                <dt>Company</dt>
+                                <dd>Peloton</dd>
+                            </div>
+                            <div class="detail-item">
+                                <dt>Duration</dt>
+                                <dd>2020-2023</dd>
+                            </div>
+                            <div class="detail-item">
+                                <dt>Achievements</dt>
+                                <dd>
+                                    <ul class="achievement-list">
+                                        <li>Led development of AI-powered workout recommendation system</li>
+                                        <li>Grew active users by 150% in 18 months</li>
+                                        <li>Launched mobile app redesign with 95% user satisfaction</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </dl>
+                    </section>
 
-        <article class="job">
-            <h3>Senior Software Engineer</h3>
-            <dl>
-                <dt>Company</dt>
-                <dd>Apple Health</dd>
-                <dt>Duration</dt>
-                <dd>2017-2020</dd>
-                <dt>Achievements</dt>
-                <dd>
-                    <ul>
-                        <li>Developed health metrics tracking algorithms</li>
-                        <li>Filed 3 patents in fitness tracking technology</li>
-                        <li>Led team of 5 engineers</li>
-                    </ul>
-                </dd>
-            </dl>
-        </article>
-    </section>
+                    <section class="job">
+                        <h3>Senior Software Engineer</h3>
+                        <dl class="job-details">
+                            <div class="detail-item">
+                                <dt>Company</dt>
+                                <dd>Apple Health</dd>
+                            </div>
+                            <div class="detail-item">
+                                <dt>Duration</dt>
+                                <dd>2017-2020</dd>
+                            </div>
+                            <div class="detail-item">
+                                <dt>Achievements</dt>
+                                <dd>
+                                    <ul class="achievement-list">
+                                        <li>Developed health metrics tracking algorithms</li>
+                                        <li>Filed 3 patents in fitness tracking technology</li>
+                                        <li>Led team of 5 engineers</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                        </dl>
+                    </section>
+                </div>
+            </article>
 
-    <section class="entrepreneurship">
-        <h2>Entrepreneurial Journey</h2>
-        <article class="startup">
-            <h3>FitTech Solutions</h3>
-            <dl>
-                <dt>Founded</dt>
-                <dd>2023</dd>
-                <dt>Funding Raised</dt>
-                <dd>$3M</dd>
-                <dt>Team Size</dt>
-                <dd>12 employees</dd>
-            </dl>
-            <p>Founded FitTech Solutions to revolutionize personal fitness through AI and computer vision technology.</p>
-            <a href="startup.html">View Company Profile</a>
-        </article>
-    </section>
+            <article id="entrepreneurship" class="card">
+                <h2>Entrepreneurial Journey</h2>
+                <div class="card-content">
+                    <dl class="company-info">
+                        <div class="info-item">
+                            <dt>Company Founded</dt>
+                            <dd>FitTech Solutions</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>Year Founded</dt>
+                            <dd>2023</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>Funding Raised</dt>
+                            <dd>$3M</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>Team Size</dt>
+                            <dd>12 employees</dd>
+                        </div>
+                    </dl>
 
-    <section class="thought-leadership">
-        <h2>Thought Leadership</h2>
-        <ul>
-            <li>
-                <h3>Conference Talks</h3>
-                <ul>
-                    <li>TechCrunch Disrupt 2023: "The Future of AI in Fitness"</li>
-                    <li>Women in Tech 2023: "Building AI-First Products"</li>
-                </ul>
-            </li>
-            <li>
-                <h3>Publications</h3>
-                <ul>
-                    <li>"Revolutionizing Fitness Through AI" - Forbes Tech</li>
-                    <li>"The Next Generation of Fitness Tech" - TechCrunch</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
+                    <section class="company-description">
+                        <h3>Company Vision</h3>
+                        <p>Founded FitTech Solutions to revolutionize personal fitness through AI and computer vision technology.</p>
+                    </section>
+                </div>
+            </article>
+        </main>
 
-    <section class="related">
-        <h2>Related Content</h2>
-        <ul>
-            <li><a href="startup.html">Company Profile</a></li>
-            <li><a href="video.html">Founder Interviews</a></li>
-            <li><a href="analytics.html">Business Metrics</a></li>
-        </ul>
-    </section>
+        <aside class="related-content">
+            <h2>Related Content</h2>
+            <ul class="related-links">
+                <li><a href="startup.html">Company Profile</a></li>
+                <li><a href="video.html">Founder Interviews</a></li>
+                <li><a href="analytics.html">Business Metrics</a></li>
+            </ul>
+        </aside>
+    </div>
 </body>
 </html> 
