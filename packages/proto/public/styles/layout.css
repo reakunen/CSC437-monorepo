@@ -19,7 +19,7 @@
 }
 
 /* Header layout */
-header {
+.page-header {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
@@ -27,6 +27,28 @@ header {
   height: var(--header-height);
   padding: 0 var(--container-padding);
   margin-bottom: 2rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-logo h1 {
+  margin: 0;
+  line-height: 1;
+}
+
+.header-logo i {
+  display: flex;
+  align-items: center;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* Main content area */
