@@ -5,3 +5,6 @@
 cd into packages/proto and npm start
 
 ssh bmai01@bmai01-host.csse.dev
+password: bmai01
+nohup npm -w proto start &
+exit
