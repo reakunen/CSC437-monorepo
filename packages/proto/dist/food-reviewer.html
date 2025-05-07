@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Reviewer Profile</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/page.css" />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .dark-mode-toggle {
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        
+        .dark-mode-toggle input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a>
+            <label class="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-toggle" autocomplete="off" />
+                Dark mode
+            </label>
+        </nav>
+
+        <header>
+            <h1>Food Reviewer Profile</h1>
+            <p>Meet our expert food reviewer and explore their culinary journey.</p>
+        </header>
+
+        <article class="card">
+            <h2>John Foodie</h2>
+            <dl>
+                <dt>Experience</dt>
+                <dd>10+ years in food criticism</dd>
+                
+                <dt>Specialties</dt>
+                <dd>Japanese cuisine, Fine dining, Street food</dd>
+                
+                <dt>Location</dt>
+                <dd>New York City</dd>
+                
+                <dt>Contact</dt>
+                <dd>john@foodreviewer.com</dd>
+            </dl>
+
+            <section class="recent-reviews">
+                <h3>Recent Reviews</h3>
+                <ul>
+                    <li><a href="food.html#ramen">Authentic Tonkotsu Ramen</a> - 5/5</li>
+                    <li><a href="food.html#sushi">Omakase Sushi Experience</a> - 4.8/5</li>
+                </ul>
+            </section>
+
+            <section class="upcoming-visits">
+                <h3>Upcoming Restaurant Visits</h3>
+                <ul>
+                    <li>Italian Trattoria - Next week</li>
+                    <li>New Vegan Bistro - Next month</li>
+                </ul>
+            </section>
+        </article>
+    </div>
+    
+    <script src="/js/dark-mode.js"></script>
+</body>
+</html> 

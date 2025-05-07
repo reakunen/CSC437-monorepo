@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <link rel="stylesheet" href="styles/page.css">
+    <style>
+        .dark-mode-toggle {
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        
+        .dark-mode-toggle input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="breadcrumb">
+                <a href="/">Home</a> / <a href="/music">Music</a> / <span>Playlist</span>
+            </nav>
+            <h1>
+                <svg class="icon">
+                    <use href="/icons/music.svg#icon-playlist" />
+                </svg>
+                Summer Vibes 2024
+            </h1>
+            <p class="subtitle">The perfect soundtrack for your summer adventures</p>
+        </header>
+
+        <article class="card">
+            <section class="stats">
+                <div class="stat-item">
+                    <svg class="icon">
+                        <use href="/icons/music.svg#icon-music" />
+                    </svg>
+                    <span>24 tracks</span>
+                </div>
+                <div class="stat-item">
+                    <svg class="icon">
+                        <use href="/icons/music.svg#icon-clock" />
+                    </svg>
+                    <span>2h 15m</span>
+                </div>
+                <div class="stat-item">
+                    <svg class="icon">
+                        <use href="/icons/music.svg#icon-heart" />
+                    </svg>
+                    <span>1.2M likes</span>
+                </div>
+            </section>
+
+            <section class="playlist-info">
+                <h2>About this playlist</h2>
+                <p>Curated by DJ Summer, this playlist features the hottest tracks of the season. Perfect for beach parties, road trips, and lazy afternoons.</p>
+                
+                <div class="actions">
+                    <button class="icon-button">
+                        <svg class="icon">
+                            <use href="/icons/music.svg#icon-heart" />
+                        </svg>
+                        Like
+                    </button>
+                    <button class="icon-button">
+                        <svg class="icon">
+                            <use href="/icons/music.svg#icon-share" />
+                        </svg>
+                        Share
+                    </button>
+                </div>
+            </section>
+
+            <section class="track-list">
+                <h2>Featured Tracks</h2>
+                <ul>
+                    <li>
+                        <svg class="icon">
+                            <use href="/icons/music.svg#icon-music" />
+                        </svg>
+                        "What You Know" - Two Door Cinema Club
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use href="/icons/music.svg#icon-music" />
+                        </svg>
+                        "Greek Tragedy" - The Wombats
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use href="/icons/music.svg#icon-music" />
+                        </svg>
+                        "A-Punk" - Vampire Weekend
+                    </li>
+                </ul>
+            </section>
+        </article>
+
+        <section class="related-content">
+            <h2>Related Playlists</h2>
+            <div class="related-links">
+                <a href="/playlist/tropical">
+                    <svg class="icon">
+                        <use href="/icons/music.svg#icon-playlist" />
+                    </svg>
+                    Tropical Beats
+                </a>
+                <a href="/playlist/roadtrip">
+                    <svg class="icon">
+                        <use href="/icons/music.svg#icon-playlist" />
+                    </svg>
+                    Road Trip Anthems
+                </a>
+                <a href="/playlist/beach">
+                    <svg class="icon">
+                        <use href="/icons/music.svg#icon-playlist" />
+                    </svg>
+                    Beach Party Mix
+                </a>
+            </div>
+        </section>
+    </div>
+    <script src="/js/dark-mode.js"></script>
+</body>
+</html> 

@@ -1,0 +1,30 @@
+[
+    {
+      "title": "Getting Started",
+      "icon": "fa-rocket",
+      "links": [
+        {
+          "text": "Documentation",
+          "href": "/docs"
+        },
+        {
+          "text": "Tutorial",
+          "href": "/tutorial"
+        }
+      ]
+    },
+    {
+      "title": "Resources",
+      "icon": "fa-book",
+      "links": [
+        {
+          "text": "API Reference",
+          "href": "/api"
+        },
+        {
+          "text": "Examples",
+          "href": "/examples"
+        }
+      ]
+    }
+  ]

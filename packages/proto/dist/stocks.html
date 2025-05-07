@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/page.css" />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .dark-mode-toggle {
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        
+        .dark-mode-toggle input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a> &gt;
+            <a href="budget.html">Budget Overview</a>
+                    <label class="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-toggle" autocomplete="off" />
+                Dark mode
+            </label>
+        </nav>
+
+        <header>
+            <h1>Investment Portfolio</h1>
+            <p>Track and manage your investment portfolio performance.</p>
+        </header>
+
+        <article id="portfolio-summary" class="card">
+            <h2>Portfolio Overview</h2>
+            <dl>
+                <dt>Total Value</dt>
+                <dd class="success">$25,000.00</dd>
+                
+                <dt>Total Return</dt>
+                <dd class="success">+15.3%</dd>
+                
+                <dt>Annual Dividend Yield</dt>
+                <dd class="success">2.1%</dd>
+            </dl>
+        </article>
+
+        <article id="holdings" class="card">
+            <h2>Current Holdings</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Company</th>
+                        <th>Shares</th>
+                        <th>Avg Cost</th>
+                        <th>Current Price</th>
+                        <th>Total Value</th>
+                        <th>Return</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AAPL</td>
+                        <td>Apple Inc.</td>
+                        <td>10</td>
+                        <td>$150.00</td>
+                        <td>$175.00</td>
+                        <td>$1,750.00</td>
+                        <td class="success">+16.7%</td>
+                    </tr>
+                    <tr>
+                        <td>MSFT</td>
+                        <td>Microsoft</td>
+                        <td>8</td>
+                        <td>$280.00</td>
+                        <td>$310.00</td>
+                        <td>$2,480.00</td>
+                        <td class="success">+10.7%</td>
+                    </tr>
+                    <tr>
+                        <td>GOOGL</td>
+                        <td>Alphabet</td>
+                        <td>5</td>
+                        <td>$2,800.00</td>
+                        <td>$3,100.00</td>
+                        <td>$15,500.00</td>
+                        <td class="success">+10.7%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article id="watchlist" class="card">
+            <h2>Watchlist</h2>
+            <section class="watchlist-item">
+                <h3>NVDA - NVIDIA Corporation</h3>
+                <dl>
+                    <dt>Current Price</dt>
+                    <dd>$450.00</dd>
+                    <dt>Alert Price</dt>
+                    <dd>$400.00</dd>
+                </dl>
+            </section>
+
+            <section class="watchlist-item">
+                <h3>TSLA - Tesla, Inc.</h3>
+                <dl>
+                    <dt>Current Price</dt>
+                    <dd>$250.00</dd>
+                    <dt>Alert Price</dt>
+                    <dd>$200.00</dd>
+                </dl>
+            </section>
+        </article>
+
+        <section class="related-content">
+            <h2>Related Tools</h2>
+            <ul>
+                <li><a href="budget.html">Budget Overview</a></li>
+                <li><a href="finance-recommendations.html">Stock Recommendations</a></li>
+                <li><a href="analytics.html">Portfolio Analytics</a></li>
+            </ul>
+        </section>
+    </div>
+    <script src="/js/dark-mode.js"></script>
+</body>
+</html> 

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/page.css" />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .dark-mode-toggle {
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        
+        .dark-mode-toggle input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> &gt;
+            <a href="finance-recommendations.html">Financial Recommendations</a>
+        </nav>
+
+        <header class="page-header">
+            <h1>Monthly Budget</h1>
+            <p class="subtitle">Track and manage your monthly income and expenses.</p>
+        </header>
+
+        <main>
+            <article id="budget-summary" class="card">
+                <h2>Budget Overview</h2>
+                <div class="card-content">
+                    <dl class="stats">
+                        <div class="stat-item">
+                            <dt>Total Income</dt>
+                            <dd class="success">$5,000.00</dd>
+                        </div>
+                        <div class="stat-item">
+                            <dt>Total Expenses</dt>
+                            <dd class="warning">$3,750.00</dd>
+                        </div>
+                        <div class="stat-item">
+                            <dt>Savings</dt>
+                            <dd class="success">$1,250.00</dd>
+                        </div>
+                    </dl>
+                </div>
+            </article>
+
+            <article id="expense-categories" class="card">
+                <h2>Expense Categories</h2>
+                <div class="card-content">
+                    <section class="category">
+                        <h3>Housing</h3>
+                        <dl class="expense-details">
+                            <div class="expense-item">
+                                <dt>Rent</dt>
+                                <dd>$1,800.00</dd>
+                            </div>
+                            <div class="expense-item">
+                                <dt>Utilities</dt>
+                                <dd>$200.00</dd>
+                            </div>
+                        </dl>
+                    </section>
+
+                    <section class="category">
+                        <h3>Transportation</h3>
+                        <dl class="expense-details">
+                            <div class="expense-item">
+                                <dt>Car Payment</dt>
+                                <dd>$300.00</dd>
+                            </div>
+                            <div class="expense-item">
+                                <dt>Gas</dt>
+                                <dd>$150.00</dd>
+                            </div>
+                        </dl>
+                    </section>
+
+                    <section class="category">
+                        <h3>Food</h3>
+                        <dl class="expense-details">
+                            <div class="expense-item">
+                                <dt>Groceries</dt>
+                                <dd>$400.00</dd>
+                            </div>
+                            <div class="expense-item">
+                                <dt>Dining Out</dt>
+                                <dd>$200.00</dd>
+                            </div>
+                        </dl>
+                    </section>
+                </div>
+            </article>
+        </main>
+
+        <aside class="related-content">
+            <h2>Related Financial Tools</h2>
+            <ul class="related-links">
+                <li><a href="stocks.html">Investment Portfolio</a></li>
+                <li><a href="finance-recommendations.html">Financial Recommendations</a></li>
+                <li><a href="analytics.html">Spending Analytics</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script src="/js/dark-mode.js"></script>
+</body>
+</html> 

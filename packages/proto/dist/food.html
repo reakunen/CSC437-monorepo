@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Items</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/page.css" />
+    <link rel="stylesheet" href="/styles/tokens.css" />    
+    <!-- <script src="/js/dark-mode.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <style>
+        .dark-mode-toggle {
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        
+        .dark-mode-toggle input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+
+        .food-items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+    </style>
+  <script type="module" crossorigin src="/assets/food-DSkbsISi.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/property-6n6DIx1f.js">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a> &gt;
+            <a href="food-reviewer.html">Food Reviewer</a>
+            <label class="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-toggle" autocomplete="off" />
+                Dark mode
+            </label>
+        </nav>
+
+        <header>
+            <h1>Food Items</h1>
+            <p>Discover and explore our curated collection of food items and dining experiences.</p>
+        </header>
+
+        <div class="food-items-grid">
+            <!-- <food-item-card
+                title="Authentic Tonkotsu Ramen"
+                imageUrl="/public/images/ramen.jpg"
+                price="$16.99"
+                restaurant="Ramen House"
+                description="Rich, creamy tonkotsu broth that's been simmered for 24 hours. Perfect chewy noodles and a melt-in-your-mouth chashu pork."
+                rating="5">
+            </food-item-card>
+            
+            <food-item-card
+                title="Omakase Sushi Experience"
+                imageUrl="/public/images/sushi.jpg"
+                price="$150.00 per person"
+                restaurant="Sushi Master"
+                description="An exceptional 12-course omakase featuring the freshest seasonal fish. Each piece is expertly crafted and perfectly seasoned."
+                rating="4.8">
+            </food-item-card>
+
+            <food-item-card
+                title="Truffle Pasta"
+                imageUrl="/public/images/janestreet.png"
+                price="$32.99"
+                restaurant="Italian Trattoria"
+                description="Handmade pasta tossed in a rich truffle cream sauce with wild mushrooms and aged parmesan."
+                rating="4.9">
+            </food-item-card> -->
+            <food-list src="/data/food.json"></food-list>
+
+        </div>
+    </div>
+</body>
+</html> 

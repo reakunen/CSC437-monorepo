@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Profile</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/page.css" />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .dark-mode-toggle {
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        
+        .dark-mode-toggle input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a> &gt;
+            <a href="workout.html">Workout Groups</a>
+            <label class="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-toggle" autocomplete="off" />
+                Dark mode
+            </label>
+        </nav>
+
+        <header>
+            <h1>Gym Profile</h1>
+            <p>Your personal fitness hub for tracking workouts and progress.</p>
+        </header>
+
+        <section class="card">
+            <h2>Gym Information</h2>
+            <dl>
+                <dt>Name</dt>
+                <dd>Power Fitness Center</dd>
+                
+                <dt>Location</dt>
+                <dd>123 Fitness Street, New York, NY</dd>
+                
+                <dt>Membership</dt>
+                <dd class="success">Active</dd>
+                
+                <dt>Member Since</dt>
+                <dd>January 2024</dd>
+            </dl>
+        </section>
+
+        <section class="card">
+            <h2>Current Workout Program</h2>
+            <dl>
+                <dt>Program Name</dt>
+                <dd>Strength & Power</dd>
+                
+                <dt>Duration</dt>
+                <dd>12 weeks</dd>
+                
+                <dt>Progress</dt>
+                <dd class="success">Week 6/12</dd>
+                
+                <dt>Next Session</dt>
+                <dd>Tomorrow, 7:00 AM</dd>
+            </dl>
+        </section>
+
+        <section class="card">
+            <h2>Recent Achievements</h2>
+            <ul>
+                <li>New Personal Record: Bench Press 185 lbs</li>
+                <li>Consistent attendance: 4 weeks in a row</li>
+                <li>Completed 50 workouts this year</li>
+            </ul>
+        </section>
+    </div>
+    
+    <script src="/js/dark-mode.js"></script>
+</body>
+</html> 

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Profile</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/page.css" />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .dark-mode-toggle {
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        
+        .dark-mode-toggle input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a> &gt;
+            <a href="founder.html">Founder Profile</a>
+                    <label class="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-toggle" autocomplete="off" />
+                Dark mode
+            </label>
+        </nav>
+
+        <header>
+            <h1>Startup Profile</h1>
+            <p>Learn about our innovative fitness technology company.</p>
+        </header>
+
+        <article id="company-info" class="card">
+            <h2>Company Information</h2>
+            <dl>
+                <dt>Company Name</dt>
+                <dd>FitTech Solutions</dd>
+                
+                <dt>Founded</dt>
+                <dd>2023</dd>
+                
+                <dt>Industry</dt>
+                <dd>Health & Fitness Technology</dd>
+                
+                <dt>Stage</dt>
+                <dd class="success">Seed</dd>
+                
+                <dt>Location</dt>
+                <dd>San Francisco, CA</dd>
+            </dl>
+        </article>
+
+        <article id="problem-solution" class="card">
+            <h2>Problem & Solution</h2>
+            
+            <section class="problem">
+                <h3>Problem</h3>
+                <p>Many people struggle to maintain consistent workout routines and track their fitness progress effectively. Traditional fitness apps lack personalization and engagement features.</p>
+            </section>
+
+            <section class="solution">
+                <h3>Solution</h3>
+                <p>AI-powered fitness platform that creates personalized workout plans, tracks progress, and provides real-time form feedback through computer vision technology.</p>
+                <ul class="features">
+                    <li>Smart workout planning</li>
+                    <li>Real-time form correction</li>
+                    <li>Progress tracking and analytics</li>
+                    <li>Community engagement features</li>
+                </ul>
+            </section>
+        </article>
+
+        <article id="metrics" class="card">
+            <h2>Key Metrics</h2>
+            <dl>
+                <dt>Monthly Active Users</dt>
+                <dd class="success">15,000</dd>
+                
+                <dt>User Growth Rate</dt>
+                <dd class="success">25% month-over-month</dd>
+                
+                <dt>Revenue</dt>
+                <dd class="success">$50,000 MRR</dd>
+                
+                <dt>Customer Retention</dt>
+                <dd class="success">85%</dd>
+            </dl>
+        </article>
+
+        <article id="team" class="card">
+            <h2>Team</h2>
+            <section class="team-member">
+                <h3>CEO & Founder</h3>
+                <dl>
+                    <dt>Name</dt>
+                    <dd><a href="founder.html">Sarah Chen</a></dd>
+                    <dt>Background</dt>
+                    <dd>Former Product Lead at Peloton, MS in Computer Science</dd>
+                </dl>
+            </section>
+
+            <section class="team-member">
+                <h3>CTO</h3>
+                <dl>
+                    <dt>Name</dt>
+                    <dd>Michael Rodriguez</dd>
+                    <dt>Background</dt>
+                    <dd>Ex-Google AI researcher, PhD in Machine Learning</dd>
+                </dl>
+            </section>
+        </article>
+
+        <section class="related-content">
+            <h2>Related Resources</h2>
+            <ul>
+                <li><a href="founder.html">Founder Profile</a></li>
+                <li><a href="analytics.html">Business Analytics</a></li>
+                <li><a href="video.html">Product Videos</a></li>
+            </ul>
+        </section>
+    </div>
+    <script src="/js/dark-mode.js"></script>
+</body>
+</html> 

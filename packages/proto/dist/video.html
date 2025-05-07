@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Content</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/page.css" />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .dark-mode-toggle {
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        
+        .dark-mode-toggle input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a>
+                    <label class="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-toggle" autocomplete="off" />
+                Dark mode
+            </label>
+        </nav>
+
+        <header>
+            <h1>Video Content</h1>
+            <p>Explore our collection of video reviews and content.</p>
+        </header>
+
+        <article id="ramen-review" class="card">
+            <h2>Tonkotsu Ramen Review</h2>
+            <dl>
+                <dt>Duration</dt>
+                <dd>12:45</dd>
+                
+                <dt>Upload Date</dt>
+                <dd>March 15, 2024</dd>
+                
+                <dt>Views</dt>
+                <dd>15,234</dd>
+                
+                <dt>Rating</dt>
+                <dd class="success">4.9/5</dd>
+            </dl>
+
+            <section class="video-description">
+                <h3>Description</h3>
+                <p>Join us as we explore the rich flavors of authentic Tonkotsu ramen at Ramen House. Watch as we break down the components of this classic dish and share our tasting experience.</p>
+            </section>
+
+            <section class="related-videos">
+                <h3>Related Videos</h3>
+                <ul>
+                    <li><a href="#sushi-experience">Omakase Sushi Experience</a></li>
+                    <li><a href="#japanese-street-food">Japanese Street Food Tour</a></li>
+                </ul>
+            </section>
+        </article>
+
+        <article id="sushi-experience" class="card">
+            <h2>Omakase Sushi Experience</h2>
+            <dl>
+                <dt>Duration</dt>
+                <dd>18:30</dd>
+                
+                <dt>Upload Date</dt>
+                <dd>March 10, 2024</dd>
+                
+                <dt>Views</dt>
+                <dd>23,567</dd>
+                
+                <dt>Rating</dt>
+                <dd class="success">4.8/5</dd>
+            </dl>
+
+            <section class="video-description">
+                <h3>Description</h3>
+                <p>Experience the art of omakase dining at Sushi Master. Follow along as we document a 12-course sushi tasting menu, featuring the freshest seasonal ingredients.</p>
+            </section>
+
+            <section class="related-videos">
+                <h3>Related Videos</h3>
+                <ul>
+                    <li><a href="#ramen-review">Tonkotsu Ramen Review</a></li>
+                    <li><a href="#sushi-making">Sushi Making Masterclass</a></li>
+                </ul>
+            </section>
+        </article>
+    </div>
+    <script src="/js/dark-mode.js"></script>
+</body>
+</html> 

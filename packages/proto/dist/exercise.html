@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Library</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/page.css" />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .dark-mode-toggle {
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        
+        .dark-mode-toggle input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a> &gt;
+            <a href="workout.html">Workout Groups</a>
+                    <label class="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-toggle" autocomplete="off" />
+                Dark mode
+            </label>
+        </nav>
+
+        <header>
+            <h1>Exercise Library</h1>
+            <p>Browse our comprehensive collection of exercises with detailed instructions.</p>
+        </header>
+
+        <article id="bench-press" class="card">
+            <h2>Bench Press</h2>
+            <dl>
+                <dt>Type</dt>
+                <dd>Compound</dd>
+                
+                <dt>Muscle Group</dt>
+                <dd>Chest, Shoulders, Triceps</dd>
+                
+                <dt>Difficulty</dt>
+                <dd>Intermediate</dd>
+                
+                <dt>Equipment</dt>
+                <dd>Barbell, Bench</dd>
+            </dl>
+
+            <section class="instructions">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Lie flat on the bench with feet firmly planted on the ground</li>
+                    <li>Grip the barbell slightly wider than shoulder width</li>
+                    <li>Lower the bar to your chest with control</li>
+                    <li>Press the bar back up to the starting position</li>
+                </ol>
+            </section>
+
+            <section class="tips">
+                <h3>Tips</h3>
+                <ul>
+                    <li>Keep your back flat against the bench</li>
+                    <li>Maintain a slight arch in your lower back</li>
+                    <li>Keep your wrists straight throughout the movement</li>
+                </ul>
+            </section>
+        </article>
+
+        <article id="plank" class="card">
+            <h2>Plank</h2>
+            <dl>
+                <dt>Type</dt>
+                <dd>Isometric</dd>
+                
+                <dt>Muscle Group</dt>
+                <dd>Core, Shoulders</dd>
+                
+                <dt>Difficulty</dt>
+                <dd>Beginner</dd>
+                
+                <dt>Equipment</dt>
+                <dd>Mat (optional)</dd>
+            </dl>
+
+            <section class="instructions">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Start in a push-up position with forearms on the ground</li>
+                    <li>Keep your body in a straight line from head to heels</li>
+                    <li>Engage your core and hold the position</li>
+                    <li>Maintain proper breathing throughout</li>
+                </ol>
+            </section>
+
+            <section class="tips">
+                <h3>Tips</h3>
+                <ul>
+                    <li>Don't let your hips sag or rise too high</li>
+                    <li>Keep your neck in line with your spine</li>
+                    <li>Start with shorter holds and gradually increase duration</li>
+                </ul>
+            </section>
+        </article>
+
+        <article id="russian-twist" class="card">
+            <h2>Russian Twist</h2>
+            <dl>
+                <dt>Category</dt>
+                <dd>Core</dd>
+                
+                <dt>Muscle Groups</dt>
+                <dd>Obliques, Core</dd>
+                
+                <dt>Equipment Needed</dt>
+                <dd>Medicine Ball (optional)</dd>
+                
+                <dt>Difficulty</dt>
+                <dd>Intermediate</dd>
+            </dl>
+
+            <section class="instructions">
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Sit with knees bent, feet off ground</li>
+                    <li>Lean back slightly, maintaining straight back</li>
+                    <li>Hold weight or clasp hands at chest</li>
+                    <li>Rotate torso side to side</li>
+                </ol>
+            </section>
+
+            <section class="tips">
+                <h3>Tips</h3>
+                <ul>
+                    <li>Keep your back straight</li>
+                    <li>Engage your core</li>
+                    <li>Rotate slowly and control the movement</li>
+                </ul>
+            </section>
+        </article>
+    </div>
+
+    <section class="related">
+        <h2>Related Resources</h2>
+        <ul>
+            <li><a href="workout.html">Workout Programs</a></li>
+            <li><a href="video.html#exercise-tutorials">Exercise Tutorials</a></li>
+            <li><a href="analytics.html#exercise-tracking">Exercise Tracking</a></li>
+        </ul>
+    </section>
+    <script src="/js/dark-mode.js"></script>
+</body>
+</html> 

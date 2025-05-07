@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/page.css" />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .dark-mode-toggle {
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        
+        .dark-mode-toggle input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a>
+                    <label class="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-toggle" autocomplete="off" />
+                Dark mode
+            </label>
+        </nav>
+
+        <header>
+            <h1>Analytics Dashboard</h1>
+            <p>Track and analyze your content performance.</p>
+        </header>
+
+        <section class="card">
+            <h2>Overview</h2>
+            <dl>
+                <dt>Total Views</dt>
+                <dd>65,602</dd>
+                
+                <dt>Average Rating</dt>
+                <dd class="success">4.8/5</dd>
+                
+                <dt>Subscriber Growth</dt>
+                <dd class="success">+15% this month</dd>
+            </dl>
+        </section>
+
+        <section class="card">
+            <h2>Content Performance</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Content</th>
+                        <th>Views</th>
+                        <th>Rating</th>
+                        <th>Engagement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="video.html#ramen-review">Tonkotsu Ramen Review</a></td>
+                        <td>15,234</td>
+                        <td class="success">4.9/5</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td><a href="video.html#sushi-experience">Omakase Sushi Experience</a></td>
+                        <td>23,567</td>
+                        <td class="success">4.8/5</td>
+                        <td>High</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Audience Insights</h2>
+            <dl>
+                <dt>Top Locations</dt>
+                <dd>New York, Los Angeles, Chicago</dd>
+                
+                <dt>Average Watch Time</dt>
+                <dd>8:45 minutes</dd>
+                
+                <dt>Peak Viewing Times</dt>
+                <dd>7-9 PM EST</dd>
+            </dl>
+        </section>
+    </div>
+    <script src="/js/dark-mode.js"></script>
+</body>
+</html> 
