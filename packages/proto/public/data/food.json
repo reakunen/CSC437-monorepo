@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Authentic Tonkotsu Ramen",
+    "imageUrl": "/public/images/ramen.jpg",
+    "price": "$16.99",
+    "restaurant": "Ramen House",
+    "description": "Rich, creamy tonkotsu broth that's been simmered for 24 hours. Perfect chewy noodles and a melt-in-your-mouth chashu pork.",
+    "rating": 5
+  },
+  {
+    "title": "Omakase Sushi Experience",
+    "imageUrl": "/public/images/sushi.jpg",
+    "price": "$150.00 per person",
+    "restaurant": "Sushi Master",
+    "description": "An exceptional 12-course omakase featuring the freshest seasonal fish. Each piece is expertly crafted and perfectly seasoned.",
+    "rating": 4.8
+  },
+  {
+    "title": "Truffle Pasta",
+    "imageUrl": "/public/images/janestreet.png",
+    "price": "$32.99",
+    "restaurant": "Italian Trattoria",
+    "description": "Handmade pasta tossed in a rich truffle cream sauce with wild mushrooms and aged parmesan.",
+    "rating": 4.9
+  }
+]

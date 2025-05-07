@@ -1,0 +1,96 @@
+{
+    "cards": [
+      {
+        "title": "Nutrition & Food",
+        "icon": "fa-utensils",
+        "links": [
+          {
+            "text": "Food Reviewer Profile",
+            "href": "food-reviewer.html"
+          },
+          {
+            "text": "Food Items",
+            "href": "food.html"
+          }
+        ]
+      },
+      {
+        "title": "Music",
+        "icon": "fa-music",
+        "links": [
+          {
+            "text": "Sheet Music",
+            "href": "sheet-music.html"
+          },
+          {
+            "text": "Music Playlists",
+            "href": "music-playlist.html"
+          }
+        ]
+      },
+      {
+        "title": "Fitness",
+        "icon": "fa-dumbbell",
+        "links": [
+          {
+            "text": "Gym Profile",
+            "href": "gym.html"
+          },
+          {
+            "text": "Workout Groups",
+            "href": "workout.html"
+          },
+          {
+            "text": "Exercises",
+            "href": "exercise.html"
+          }
+        ]
+      },
+      {
+        "title": "Content Creation",
+        "icon": "fa-video",
+        "links": [
+          {
+            "text": "Video Content",
+            "href": "video.html"
+          },
+          {
+            "text": "Analytics",
+            "href": "analytics.html"
+          }
+        ]
+      },
+      {
+        "title": "Personal Finance",
+        "icon": "fa-wallet",
+        "links": [
+          {
+            "text": "Budget",
+            "href": "budget.html"
+          },
+          {
+            "text": "Stock Portfolio",
+            "href": "stocks.html"
+          },
+          {
+            "text": "Financial Recommendations",
+            "href": "finance-recommendations.html"
+          }
+        ]
+      },
+      {
+        "title": "Entrepreneurship",
+        "icon": "fa-rocket",
+        "links": [
+          {
+            "text": "Startup Profile",
+            "href": "startup.html"
+          },
+          {
+            "text": "Founder/CEO Profile",
+            "href": "founder.html"
+          }
+        ]
+      }
+    ]
+  }

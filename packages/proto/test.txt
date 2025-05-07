@@ -45,7 +45,6 @@
                 <p>Your comprehensive platform for managing all aspects of your lifestyle and success journey.</p>
             </div>
             <div class="categories-grid">
-
                 <blz-main-card 
                     title="Nutrition & Food"
                     icon="fa-utensils"
@@ -89,12 +88,10 @@
     <script type="module">
         import { define } from "@calpoly/mustang";
         import { MainCard } from "/src/MainCard.js";
-        
         define({
           "blz-main-card": MainCard
         });
-      </script>
-      
+    </script>
     <script src="/js/dark-mode.js"></script>
 </body>
 </html>
