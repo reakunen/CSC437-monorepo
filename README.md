@@ -6,6 +6,12 @@ cd into packages/proto and npm run build, (it should create the dist file)
 
 then do npm run start npm start
 
+
+Finished lab 9, the 
+food item and food list 
+https://bmai01.csse.dev/food.html
+
+
 ssh bmai01@bmai01-host.csse.dev
 nohup npm -w proto start &
 exit
