@@ -15,3 +15,8 @@ cd /home/bmai01/CSC437-monorepo/packages/proto
 
 ssh bmai01@bmai01-host.csse.dev
 nohup npm --workspace=proto start > nohup.out 2>&1 &
+
+
+
+brianm17055
+Password123!
