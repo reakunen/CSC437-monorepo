@@ -14,6 +14,7 @@ app.use(express.static(staticDir))
 app.use(express.json())
 
 // Routes
+
 app.get('/hello', (req: Request, res: Response) => {
 	res.send('Hello, World')
 })

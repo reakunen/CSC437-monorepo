@@ -3,13 +3,13 @@ import { Food } from '../models/food'
 
 const FoodSchema = new Schema<Food>(
 	{
-		foodid: { type: String, required: true, trim: true },
-		name: { type: String, required: true, trim: true },
-		location: { type: String, required: true, trim: true },
-		rating: { type: Number, required: true },
+		id: { type: Number, required: true, trim: true, unique: true },
+		title: { type: String, required: true, trim: true },
+		imageUrl: { type: String, required: true, trim: true },
+		price: { type: String, required: true, trim: true },
+		restaurant: { type: String, required: true, trim: true },
 		description: { type: String, required: true, trim: true },
-		price: { type: Number, required: true },
-		imageUrl: { type: String, trim: true },
+		rating: { type: Number, required: true },
 	},
 	{ collection: 'foods' }
 )

@@ -1,9 +1,10 @@
 export interface Food {
-	foodid: string
-	name: string
-	location: string
-	rating: number
+	id: number
+	title: string
+	imageUrl: string
+	price: string
+	restaurant: string
 	description: string
-	price: number
-	imageUrl?: string
+	rating: number
 }
+
