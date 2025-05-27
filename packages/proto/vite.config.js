@@ -23,6 +23,8 @@ export default defineConfig({
         startup: resolve(__dirname, 'startup.html'),
         stocks: resolve(__dirname, 'stocks.html'),
         workout: resolve(__dirname, 'workout.html'),
+        login: resolve(__dirname, 'login.html'),
+        newuser: resolve(__dirname, 'newuser.html')
       },
     },
   },

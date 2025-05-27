@@ -1,29 +1,29 @@
 [
-  {
-    "id": 1,
-    "title": "Authentic Tonkotsu Ramen",
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxhqcSkT3bHIzeIol0UzyN8wR2U0uj2W_hQA&s",
-    "price": "$16.99",
-    "restaurant": "Ramen House",
-    "description": "Rich, creamy tonkotsu broth that's been simmered for 24 hours. Perfect chewy noodles and a melt-in-your-mouth chashu pork.",
-    "rating": 5
-  },
-  {
-    "id": 2,
-    "title": "Omakase Sushi Experience",
-    "imageUrl": "https://www.kikkoman.eu/fileadmin/user_upload/kikkoman.eu/Food-News/EU_make-your-own-sushi/sushi-kakkoii.jpeg",
-    "price": "$150.00 per person",
-    "restaurant": "Sushi Master",
-    "description": "An exceptional 12-course omakase featuring the freshest seasonal fish. Each piece is expertly crafted and perfectly seasoned.",
-    "rating": 4.8
-  },
-  {
-    "id": 3,
-    "title": "Truffle Pasta",
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9EBWhobyLbQaiUr89XKGMgYqHZWJRGYCubA&s",
-    "price": "$32.99",
-    "restaurant": "Italian Trattoria",
-    "description": "Handmade pasta tossed in a rich truffle cream sauce with wild mushrooms and aged parmesan.",
-    "rating": 4.9
-  }
+	{
+		"id": 1,
+		"title": "Authentic Tonkotsu Ramen",
+		"imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxhqcSkT3bHIzeIol0UzyN8wR2U0uj2W_hQA&s",
+		"price": "$16.99",
+		"restaurant": "Ramen House",
+		"description": "Rich, creamy tonkotsu broth that's been simmered for 24 hours. Perfect chewy noodles and a melt-in-your-mouth chashu pork.",
+		"rating": 5
+	},
+	{
+		"id": 2,
+		"title": "Omakase Sushi Experience",
+		"imageUrl": "https://www.kikkoman.eu/fileadmin/user_upload/kikkoman.eu/Food-News/EU_make-your-own-sushi/sushi-kakkoii.jpeg",
+		"price": "$150.00 per person",
+		"restaurant": "Sushi Master",
+		"description": "An exceptional 12-course omakase featuring the freshest seasonal fish. Each piece is expertly crafted and perfectly seasoned.",
+		"rating": 4.8
+	},
+	{
+		"id": 3,
+		"title": "Truffle Pasta",
+		"imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9EBWhobyLbQaiUr89XKGMgYqHZWJRGYCubA&s",
+		"price": "$32.99",
+		"restaurant": "Italian Trattoria",
+		"description": "Handmade pasta tossed in a rich truffle cream sauce with wild mushrooms and aged parmesan.",
+		"rating": 4.9
+	}
 ]

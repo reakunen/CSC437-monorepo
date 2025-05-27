@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheet Music</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/page.css" />
+    <link rel="stylesheet" href="/styles/tokens.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .dark-mode-toggle {
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        
+        .dark-mode-toggle input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Home</a> &gt;
+            <a href="music-playlist.html">Music Playlists</a>
+                    <label class="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-toggle" autocomplete="off" />
+                Dark mode
+            </label>
+        </nav>
+
+        <header>
+            <h1>Sheet Music Library</h1>
+            <p>Browse and download sheet music for various instruments and skill levels.</p>
+        </header>
+
+        <article id="piano" class="card">
+            <h2>Piano Sheet Music</h2>
+            <dl>
+                <dt>Difficulty</dt>
+                <dd>Intermediate</dd>
+                
+                <dt>Genre</dt>
+                <dd>Classical, Contemporary</dd>
+                
+                <dt>Pages</dt>
+                <dd>5-10</dd>
+                
+                <dt>Format</dt>
+                <dd>PDF, MusicXML</dd>
+            </dl>
+
+            <section class="piece-list">
+                <h3>Featured Pieces</h3>
+                <ul>
+                    <li>Moonlight Sonata - Beethoven</li>
+                    <li>River Flows in You - Yiruma</li>
+                    <li>Clair de Lune - Debussy</li>
+                </ul>
+            </section>
+
+            <section class="related-content">
+                <h3>Related Resources</h3>
+                <ul>
+                    <li><a href="#guitar">Guitar Sheet Music</a></li>
+                    <li><a href="#violin">Violin Sheet Music</a></li>
+                </ul>
+            </section>
+        </article>
+
+        <article id="guitar" class="card">
+            <h2>Guitar Sheet Music</h2>
+            <dl>
+                <dt>Difficulty</dt>
+                <dd>Beginner to Advanced</dd>
+                
+                <dt>Genre</dt>
+                <dd>Rock, Blues, Classical</dd>
+                
+                <dt>Pages</dt>
+                <dd>3-8</dd>
+                
+                <dt>Format</dt>
+                <dd>PDF, Guitar Pro</dd>
+            </dl>
+
+            <section class="piece-list">
+                <h3>Featured Pieces</h3>
+                <ul>
+                    <li>Stairway to Heaven - Led Zeppelin</li>
+                    <li>Classical Gas - Mason Williams</li>
+                    <li>Blackbird - The Beatles</li>
+                </ul>
+            </section>
+
+            <section class="related-content">
+                <h3>Related Resources</h3>
+                <ul>
+                    <li><a href="#piano">Piano Sheet Music</a></li>
+                    <li><a href="#violin">Violin Sheet Music</a></li>
+                </ul>
+            </section>
+        </article>
+    </div>
+    <script src="/js/dark-mode.js"></script>
+</body>
+</html> 

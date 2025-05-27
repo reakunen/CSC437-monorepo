@@ -1,0 +1,26 @@
+[
+	{
+		"title": "Spicy Miso Ramen",
+		"imageUrl": "https://example.com/images/spicy-miso.jpg",
+		"price": "$15.49",
+		"restaurant": "Ramen House",
+		"description": "A bold, spicy miso broth with tender pork and fresh noodles.",
+		"rating": 4
+	},
+	{
+		"title": "Shoyu Ramen",
+		"imageUrl": "https://example.com/images/shoyu.jpg",
+		"price": "$14.99",
+		"restaurant": "Tokyo Noodles",
+		"description": "Classic soy sauce-based ramen with bamboo shoots and green onions.",
+		"rating": 5
+	},
+	{
+		"title": "Vegetarian Ramen",
+		"imageUrl": "https://example.com/images/veggie.jpg",
+		"price": "$13.99",
+		"restaurant": "Green Bowl",
+		"description": "A hearty vegetarian broth with tofu, mushrooms, and seasonal veggies.",
+		"rating": 4
+	}
+]
