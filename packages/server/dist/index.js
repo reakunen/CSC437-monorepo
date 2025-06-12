@@ -1,47 +1,108 @@
-"use strict";
-var __create = Object.create;
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __getProtoOf = Object.getPrototypeOf;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from))
-      if (!__hasOwnProp.call(to, key) && key !== except)
-        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-  }
-  return to;
-};
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
-  // If the importer is in node compatibility mode or this is not an ESM
-  // file that has been converted to a CommonJS file using a Babel-
-  // compatible transform (i.e. "__esModule" has not been set), then set
-  // "default" to the CommonJS "module.exports" for node compatibility.
-  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
-  mod
-));
-var import_express = __toESM(require("express"));
-var import_mongo = require("./services/mongo");
-var import_auth = __toESM(require("./routes/auth"));
-var import_foods = __toESM(require("./routes/foods"));
-const app = (0, import_express.default)();
-const port = process.env.PORT || 3e3;
-(0, import_mongo.connect)("csc437");
-const staticDir = process.env.STATIC || "public";
-app.use(import_express.default.static(staticDir));
-app.use(import_express.default.json());
-app.use("/auth", import_auth.default);
-app.use("/api/foods", import_auth.authenticateUser, import_foods.default);
-app.get("/ping", (_, res) => {
-  res.send(
-    `<h1>Hello!</h1>
-	   <p>Server is up and running.</p>
-	   <p>Serving static files from <code>${staticDir}</code>.</p>
-	  `
-  );
-});
-app.use("/auth", import_auth.default);
+import express from 'express'
+import path from 'path'
+import { connect } from './services/mongo.js'
+import auth from './routes/auth.js'
+// import Foods from './routes/foods.js';
+// further down, near where you use the profiles router
+const app = express()
+const port = process.env.PORT || 3000
+
+// Connect to MongoDB
+connect('csc437') // use your own db name here
+
+// Middleware
+app.use(express.json())
+
+// CORS for development
+app.use((req, res, next) => {
+	res.header('Access-Control-Allow-Origin', '*')
+	res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
+	res.header(
+		'Access-Control-Allow-Headers',
+		'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+	)
+	if (req.method === 'OPTIONS') {
+		res.sendStatus(200)
+	} else {
+		next()
+	}
+})
+
+// Serve static files
+app.use(express.static('public'))
+app.use(
+	'/styles',
+	express.static(path.join(process.cwd(), '../../proto/public/styles'))
+)
+
+// Serve app files
+app.use(express.static(path.join(process.cwd(), '../../app')))
+app.use(express.static(path.join(process.cwd(), '../../proto/public')))
+
+// Authentication routes
+app.use('/auth', auth)
+
+// Test route
+app.get('/ping', (req, res) => {
+	res.json({
+		message: 'Server is running!',
+		timestamp: new Date().toISOString(),
+	})
+})
+
+// Serve login and register pages
+app.get('/login.html', (req, res) => {
+	res.sendFile(path.join(process.cwd(), '../../app/login.html'))
+})
+
+app.get('/register.html', (req, res) => {
+	res.sendFile(path.join(process.cwd(), '../../app/register.html'))
+})
+
+// Serve main app
+app.get('/', (req, res) => {
+	res.sendFile(path.join(process.cwd(), '../../app/index.html'))
+})
+
+// Food routes
+/*
+import Foods from './services/food-svc'
+app.get('/api/foods', (req: Request, res: Response) => {
+    Foods.index()
+        .then((foods) => res.json(foods))
+        .catch((err) => res.status(500).json({ error: err.toString() }))
+})
+
+app.get('/api/foods/:id', (req: Request, res: Response) => {
+    const { id } = req.params
+    Foods.get(id)
+        .then((food) => res.json(food))
+        .catch((err) => res.status(404).json({ error: err.toString() }))
+})
+
+app.post('/api/foods', (req: Request, res: Response) => {
+    Foods.create(req.body)
+        .then((food) => res.status(201).json(food))
+        .catch((err) => res.status(400).json({ error: err.toString() }))
+})
+
+app.put('/api/foods/:id', (req: Request, res: Response) => {
+    const { id } = req.params
+    Foods.update(id, req.body)
+        .then((food) => res.json(food))
+        .catch((err) => res.status(404).json({ error: err.toString() }))
+})
+
+app.delete('/api/foods/:id', (req: Request, res: Response) => {
+    const { id } = req.params
+    Foods.remove(id)
+        .then(() => res.status(204).send())
+        .catch((err) => res.status(404).json({ error: err.toString() }))
+})
+*/
+
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
-});
+	console.log(`🚀 Server running at http://localhost:${port}`)
+	console.log(`🔑 Login at http://localhost:${port}/login.html`)
+	console.log(`📝 Register at http://localhost:${port}/register.html`)
+})

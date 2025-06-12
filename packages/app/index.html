@@ -11,16 +11,21 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 		/>
+		<script type="importmap">
+			{
+				"imports": {
+					"@calpoly/mustang": "/node_modules/@calpoly/mustang/dist/mustang.mjs"
+				}
+			}
+		</script>
 	</head>
 	<body>
-		<mu-history provides="blz:history">
-			<mu-auth provides="blz:auth" redirect="/login.html">
-				<article class="page">
-					<blz-header></blz-header>
-					<mu-switch></mu-switch>
-				</article>
-			</mu-auth>
-		</mu-history>
+		<article class="page">
+			<blz-header></blz-header>
+			<main>
+				<home-view></home-view>
+			</main>
+		</article>
 
 		<script type="module" src="/src/main.ts"></script>
 	</body>

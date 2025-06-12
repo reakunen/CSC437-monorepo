@@ -83,3 +83,5 @@ export class FoodViewElement extends LitElement {
 		`
 	}
 }
+
+export const FoodView = FoodViewElement
